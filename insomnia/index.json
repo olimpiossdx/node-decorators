@@ -1,0 +1,530 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-06-01T21:15:34.155Z",
+  "__export_source": "insomnia.desktop.app:v2023.1.0",
+  "resources": [
+    {
+      "_id": "req_6e92b8c8b92d4603834f055313b0bddf",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685196141408,
+      "created": 1684568090370,
+      "url": "http://localhost:3333/api/users/upload",
+      "name": "multipart-files",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "name": "files",
+            "value": "",
+            "id": "pair_a512cf5eebdf450283792f98d5b24342",
+            "type": "file",
+            "fileName": "/Users/olimpiopimenta/Downloads/WhatsApp Image 2022-11-06 at 12.57.02.jpeg"
+          },
+          {
+            "id": "pair_f32cbf003c10444fa905d987257d374c",
+            "name": "file2",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "/Users/olimpiopimenta/Music/Mag - Primeiro Carro.mp3"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090370,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_0378577af3394e309c29ade23bea57de",
+      "parentId": "fld_25b51054287d414a91f25397ba8e5a71",
+      "modified": 1685653853036,
+      "created": 1684596425874,
+      "name": "users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1685110957861.5,
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_25b51054287d414a91f25397ba8e5a71",
+      "parentId": "wrk_bab25e8b2dc443a8bd3894b21b77570b",
+      "modified": 1685654086299,
+      "created": 1685653831653,
+      "name": "Exemples decorators",
+      "description": "Examples routes to test project",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1685653831653,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_bab25e8b2dc443a8bd3894b21b77570b",
+      "parentId": null,
+      "modified": 1682950171304,
+      "created": 1682950171304,
+      "name": "user",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_ef2946a1e596427dac767578322e8735",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685196162104,
+      "created": 1684596352760,
+      "url": "http://localhost:3333/api/users/123",
+      "name": "json-delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nome\":\"Jose\",\n\t\"sobreNome\":\"maria francisco\",\n\t\"itens\":[0,1,2,3],\n\t\"coisas\":[\n\t\t{\"nome\":1, \"teste\":\"2\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090357.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e6013d1a222741ee83118f0d32206f89",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685196169332,
+      "created": 1684596283572,
+      "url": "http://localhost:3333/api/users/123",
+      "name": "json",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nome\":\"Jose\",\n\t\"sobreNome\":\"maria francisco\",\n\t\"itens\":[0,1,2,3],\n\t\"coisas\":[\n\t\t{\"nome\":1, \"teste\":\"2\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090345,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0e58d32be06b48e7ab6814e27cb59f44",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685196181820,
+      "created": 1684569638660,
+      "url": "http://localhost:3333/api/users/",
+      "name": "all",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1684568090338.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fce6bbaa90f049b680c092ad6d367db8",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685196197220,
+      "created": 1684596376184,
+      "url": "http://localhost:3333/api/users/123",
+      "name": "json-put",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nome\":\"Jose\",\n\t\"sobreNome\":\"maria francisco\",\n\t\"itens\":[0,1,2,3],\n\t\"coisas\":[\n\t\t{\"nome\":1, \"teste\":\"2\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090332.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ce460f18fda749508b444cb638bf9967",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685312554125,
+      "created": 1684596402064,
+      "url": "http://localhost:3333/api/users/1223",
+      "name": "id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1684568090326.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e0e8ac5e27c242cb9d7d6899fe09984f",
+      "parentId": "fld_0378577af3394e309c29ade23bea57de",
+      "modified": 1685547153942,
+      "created": 1684595731083,
+      "url": "http://localhost:3333/api/users/",
+      "name": "json",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Joaquim\",\n\t\"lastName\": \"Franciso boy\",\n\t\"phoneNumber\": \"31889654736\",\n\t\"email\": \"boyJoaquim@gmail.com\",\n\t\"cpfCnpj\":\"10695966385\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090320,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_50af6fa134904420b7ef2f5c619c4fe0",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654030664,
+      "created": 1685653864441,
+      "url": "http://localhost:3333/api/test/upload",
+      "name": "multipart-files",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "name": "files",
+            "value": "",
+            "id": "pair_a512cf5eebdf450283792f98d5b24342",
+            "type": "file",
+            "fileName": "/Users/olimpiopimenta/Downloads/WhatsApp Image 2022-11-06 at 12.57.02.jpeg"
+          },
+          {
+            "id": "pair_f32cbf003c10444fa905d987257d374c",
+            "name": "file2",
+            "value": "",
+            "description": "",
+            "type": "file",
+            "fileName": "/Users/olimpiopimenta/Music/Mag - Primeiro Carro.mp3"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090370,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_7a952374440e449ba7c2ae2917936c33",
+      "parentId": "fld_25b51054287d414a91f25397ba8e5a71",
+      "modified": 1685653864439,
+      "created": 1685653864439,
+      "name": "test",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1684957334047.75,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_4027f34a2b3c4b269f61099e16b20cb6",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654033324,
+      "created": 1685653864451,
+      "url": "http://localhost:3333/api/test/123",
+      "name": "json-delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nome\":\"Jose\",\n\t\"sobreNome\":\"maria francisco\",\n\t\"itens\":[0,1,2,3],\n\t\"coisas\":[\n\t\t{\"nome\":1, \"teste\":\"2\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090357.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_bf0862c8916c46048c147738523a10bb",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654038268,
+      "created": 1685653864449,
+      "url": "http://localhost:3333/api/test/123",
+      "name": "json",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nome\":\"Jose\",\n\t\"sobreNome\":\"maria francisco\",\n\t\"itens\":[0,1,2,3],\n\t\"coisas\":[\n\t\t{\"nome\":1, \"teste\":\"2\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090345,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4107584b19a04daca602e8d78b159491",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654025233,
+      "created": 1685653864444,
+      "url": "http://localhost:3333/api/test/",
+      "name": "all",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1684568090338.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_affe28d3b4ca4425bf52780ecaa2000e",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654045571,
+      "created": 1685653864453,
+      "url": "http://localhost:3333/api/test/123",
+      "name": "json-put",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"nome\":\"Jose\",\n\t\"sobreNome\":\"maria francisco\",\n\t\"itens\":[0,1,2,3],\n\t\"coisas\":[\n\t\t{\"nome\":1, \"teste\":\"2\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090332.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7ccc57adcd3e44e7985e7f42c52df570",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654048688,
+      "created": 1685653864454,
+      "url": "http://localhost:3333/api/test/1223",
+      "name": "id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1684568090326.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_19b9e4f7a2eb45b5aa89abd2aa6852a9",
+      "parentId": "fld_7a952374440e449ba7c2ae2917936c33",
+      "modified": 1685654051999,
+      "created": 1685653864446,
+      "url": "http://localhost:3333/api/test/",
+      "name": "json",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Joaquim\",\n\t\"lastName\": \"Franciso boy\",\n\t\"phoneNumber\": \"31992685691\",\n\t\"email\": \"boyJoaquim@gmail.com\",\n\t\"cpfCnpj\":\"10695966385\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1684568090320,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_7d1486ff3a1f7691e41d19c0c226cf01a8b6f8f8",
+      "parentId": "wrk_bab25e8b2dc443a8bd3894b21b77570b",
+      "modified": 1682950278124,
+      "created": 1682950171306,
+      "name": "Base Environment",
+      "data": {
+        "dev": "http://localhost:3333",
+        "prd": "",
+        "qa": ""
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "dev",
+          "prd",
+          "qa"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1682950171306,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_7d1486ff3a1f7691e41d19c0c226cf01a8b6f8f8",
+      "parentId": "wrk_bab25e8b2dc443a8bd3894b21b77570b",
+      "modified": 1682950171307,
+      "created": 1682950171307,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_e5e8dc4b94f74283addb16304e5fb0ce",
+      "parentId": "wrk_bab25e8b2dc443a8bd3894b21b77570b",
+      "modified": 1682950171304,
+      "created": 1682950171304,
+      "fileName": "user",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
