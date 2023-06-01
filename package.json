@@ -1,0 +1,31 @@
+{
+  "name": "diadecampo",
+  "version": "1.0.0",
+  "main": "yes",
+  "repository": "yes",
+  "author": "yes",
+  "license": "yes",
+  "private": true,
+  "scripts": {
+    "attach": "nodemon --exec ts-node --inspect-brk=9229 app.ts",
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.6",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa__router": "^12.0.0",
+    "nodemon": "^2.0.22",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "@types/node": "^20.2.1",
+    "jsonwebtoken": "^9.0.0",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-router": "^12.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
